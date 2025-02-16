@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+button {
+  height: 80px;
+  width: 400px;
+  border: none;
+  border-radius: 10px;
+  font-size: medium;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0 0 50px rgba(255, 255, 255, 1), 0 0 80px rgba(255, 255, 255, 0.6);
+}
+body.light {
+  background: linear-gradient(to right, #fef0e0, #ace3fb);
+  box-shadow: 0 0 30px bisque;
+}
+body.dark {
+  background: bisque;
+  box-shadow: 0 0 30px linear-gradient(to right, #fef0e0, #ace3fb);
+}
